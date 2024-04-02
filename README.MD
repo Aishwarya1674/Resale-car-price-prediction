@@ -1,7 +1,7 @@
 Resale Price Insights
 
 Know How much your car worth
-<img src="car3.jpg" width="100" height="100"/>
+<img src="car3.jpg" width="300" height="600"/>
 
 
 
@@ -14,7 +14,7 @@ Introduction:
 App link:  https://resale-price-insight.streamlit.app/
 
 Pipeline For Model:
-<img src="pipeline.jpg" width="100" height="100"/><br>
+<img src="pipeline.png" width="600" height="300"/><br>
 
 
 Overview of Steps: <br>
