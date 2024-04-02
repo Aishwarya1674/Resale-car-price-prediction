@@ -24,6 +24,10 @@ with col2:#select brand
     car_filt = df.loc[filt,'full_name'].unique()
     car_name = st.selectbox('Select Your Car Name',car_filt,index=None,placeholder="Select the Model of your car")
 
+    filt = df['full_name'] == car_name
+    transmission_filt = df.loc[filt, 'transmission_type'].unique()
+    transmission = st.selectbox('Automatic vs Manual', transmission_filt, placeholder="Select the transmission type ")
+
     #select Regsieterd year
     year = st.selectbox('Choose Registered Year',np.sort(df['registered_year'].unique())[::-1],index=None)
 
@@ -37,9 +41,6 @@ with col2:#select brand
     insurance = st.selectbox('Which insurance do you have',insurance_list,placeholder="Select the insurance of your car")
 
     #select transmission of car
-    filt = df['full_name'] == car_name
-    transmission_filt = df.loc[filt,'transmission_type'].unique()
-    transmission = st.selectbox('Automatic vs Manual',transmission_filt,placeholder="Select the transmission type ")
 
     owner = st.selectbox('Owner Type',df['owner_type'].unique(),placeholder="Select the owner type")
     fuel = st.selectbox('Fuel Type',df['fuel_type'].unique(),placeholder="Select the fuel type")
