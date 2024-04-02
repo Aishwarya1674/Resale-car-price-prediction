@@ -1,8 +1,7 @@
-
 import streamlit as st
 import pickle
 import numpy as np
-import pandas as pd
+
 
 st.title("Car Price Prediction System")
 df = pickle.load(open('df.pkl','rb'))
@@ -18,6 +17,13 @@ car_name = st.selectbox('Select Your Car Name',car_filt,index=None)
 
 #select Regsieterd year
 year = st.selectbox('Choose Registered Year',np.sort(df['registered_year'].unique())[::-1],index=None)
+
+if year:
+    age = 2023 - year
+else:
+    age = df['registered_year'].mode()
+
+
 
 #select insurance
 insurance_list = list(df['insurance'].unique())
@@ -37,8 +43,6 @@ engine_filt = df.loc[filt,'engine_capacity'].unique()
 engine = st.selectbox('Engine Capacity',engine_filt)
 
 kms_driven = st.slider('How Much Car You Drove (Kms Driven)',500,150000)
-
-age = 2023 - year
 
 button_clicked = st.button('predict car price')
 if button_clicked:
