@@ -1,6 +1,8 @@
 Resale Price Insights
+
 Know How much your car worth
-![Alt text](car3.jpg)
+<img src="car3.jpg" width="100" height="100"/>
+
 
 
 Problem :
@@ -12,11 +14,12 @@ Introduction:
 App link:  https://resale-price-insight.streamlit.app/
 
 Pipeline For Model:
-![Alt text](pipeline.jpg)
+<img src="pipeline.jpg" width="100" height="100"/><br>
 
-Overview of Steps: 
-1: Historical data of resale prices of cars retrived from Kaggle
-2: Data Cleaning,EDA,
-3: Data Preprocessing and Feature Engineering
-4: Model is developed Using LinearRegresion(Polynomial Features) Algorithm
-5: Create Web-App and Deployed using Streamlit
+
+Overview of Steps: <br>
+1: Historical data of resale prices of cars retrived from Kaggle<br>
+2: Data Cleaning,EDA<br>
+3: Data Preprocessing and Feature Engineering<br>
+4: Model is developed Using LinearRegresion(Polynomial Features) Algorithm<br>
+5: Create Web-App and Deployed using Streamlit<br>
