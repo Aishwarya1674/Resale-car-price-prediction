@@ -24,3 +24,8 @@ App link:  https://resale-price-insight.streamlit.app/
 3: Data Preprocessing and Feature Engineering<br>
 4: Model is developed Using LinearRegresion(Polynomial Features) Algorithm<br>
 5: Create Web-App and Deployed using Streamlit<br>
+
+## Drawbacks:
+1: data is collected 6 months ago so there is no 2024 data present so prices can be little bit diff
+
+
